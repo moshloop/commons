@@ -147,6 +147,11 @@ var dependencies = map[string]Dependency{
 		Macosx:  "https://github.com/jenkins-x/jx/releases/download/v2.0.795/jx-darwin-amd64.tar.gz",
 		Linux:   "https://github.com/jenkins-x/jx/releases/download/v2.0.795/jx-linux-amd64.tar.gz",
 	},
+	"sops": Dependency{
+		Version: "v3.5.0",
+		Linux:   "https://github.com/mozilla/sops/releases/download/{{.version}}/sops-{{.version}}.linux",
+		Macosx:  "https://github.com/mozilla/sops/releases/download/{{.version}}/sops-{{.version}}.darwin",
+	},
 }
 
 // InstallDependency installs a binary to binDir, if ver is nil then the default version is used
