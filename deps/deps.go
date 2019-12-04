@@ -88,6 +88,11 @@ var dependencies = map[string]Dependency{
 		Version: "v3.0.2",
 		Go:      "sigs.k8s.io/kustomize/v3/cmd/kustomize",
 	},
+	"kind": Dependency{
+		Version: "0.6.1",
+		Linux:   "https://github.com/kubernetes-sigs/kind/releases/download/v{{.version}}/kind-linux-amd64",
+		Macosx:  "https://github.com/kubernetes-sigs/kind/releases/download/v{{.version}}/kind-darwin-amd64",
+	},
 	"pgo": Dependency{
 		Version: "4.0.1",
 		Linux:   "https://github.com/CrunchyData/postgres-operator/releases/download/{{.version}}/pgo",
