@@ -71,8 +71,8 @@ var dependencies = map[string]Dependency{
 		Docker:  "docker.io/bitnami/jsonnet",
 	},
 	"sonobuoy": Dependency{
-		Version: "0.15.0",
-		Linux:   "https://github.com/heptio/sonobuoy/releases/download/v{.version}}/sonobuoy_{{.version}}_linux_amd64.tar.gz",
+		Version: "0.16.4",
+		Linux:   "https://github.com/heptio/sonobuoy/releases/download/v{{.version}}/sonobuoy_{{.version}}_linux_amd64.tar.gz",
 		Macosx:  "https://github.com/heptio/sonobuoy/releases/download/v{{.version}}/sonobuoy_{{.version}}_darwin_amd64.tar.gz",
 	},
 	"govc": Dependency{
@@ -133,7 +133,7 @@ var dependencies = map[string]Dependency{
 		Linux:   "https://github.com/TheWolfNL/expenv/releases/download/{{.version}}/expenv_linux_amd64",
 	},
 	"velero": Dependency{
-		Version: "v1.1.0",
+		Version: "v1.2.0",
 		Macosx:  "https://github.com/heptio/velero/releases/download/{{.version}}/velero-{{.version}}-darwin-amd64.tar.gz",
 		Linux:   "https://github.com/heptio/velero/releases/download/{{.version}}/velero-{{.version}}-linux-amd64.tar.gz",
 	},
